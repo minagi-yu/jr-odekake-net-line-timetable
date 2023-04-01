@@ -11,6 +11,17 @@
 <body>
     <h1>JR西日本　JRおでかけネット　時刻表リンク</h1>
 
+    <fieldset>
+        <legend>日付選択</legend>
+        <input id="today" type="radio" name="date-select" value="today" checked>
+        <label for="today">今日</label>
+        <input id="custom" type="radio" name="date-select" value="custom">
+        <label for="custom">
+            日付指定
+            <input id="date-field" type="date">
+        </label>
+    </fieldset>
+
     <svg width="1024" height="768" viewBox="0 0 1024 768" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round">
         <g id="land" fill="none" stroke="rgb(0,0,0)" stroke-width="1px">
             <path id="honsyu" d="M1024,35L884,107L870,131L833,119L839,93L820,85L825,65L872,37L867,20L803,47L803,105L787,155L712,241L726,293L680,321L620,315L635,292L622,278L587,297L399,326L391,306L317,321L315,344L213,433L187,439L159,470L104,476L101,531L119,525L133,541L149,542L160,527L202,527L244,557L259,546L270,491L292,487L303,506L385,476L439,460L458,475L503,437L562,428L601,450L639,438L653,455L610,496L610,554L670,617L710,614L769,512L824,499L830,469L791,448L808,384L825,384L827,428L840,408L877,421L851,444L900,441L988,447L1002,406L1024,384"/>
