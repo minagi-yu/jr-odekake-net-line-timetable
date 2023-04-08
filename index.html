@@ -921,10 +921,7 @@
                     const tt_link = document.querySelectorAll('.tt-link');
                     for (let i = 0, len = tt_link.length | 0; i < len; i = i + 1 | 0) {
                         let href = new URL(tt_link[i].getAttribute('href'));
-                        href.searchParams.forEach((v, k) => {
-                            href.searchParams.delete(k);
-                        });
-                        tt_link[i].setAttribute('href', href.toString());
+                        tt_link[i].setAttribute('href', href.origin + href.pathname);
                     }
                     document.getElementById('date-field').disabled = true;
                 }
